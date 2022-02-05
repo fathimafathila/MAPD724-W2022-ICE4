@@ -3,23 +3,23 @@ import SpriteKit
 
 class GameObject : SKSpriteNode, GameProtocol
 {
-    // public instance members
+   
     var horizontalSpeed: CGFloat?
     var verticalSpeed: CGFloat?
     var width: CGFloat?
     var height: CGFloat?
     var halfWidth: CGFloat?
     var halfHeight: CGFloat?
-    var scale: CGFloat? // uniform scale
+    var scale: CGFloat?
     var isCollding: Bool?
     var randomSource: GKARC4RandomSource?
     var randomDist: GKRandomDistribution?
     
     
-    // constructor / initializer
+   
     init(imageString: String, initialScale: CGFloat)
     {
-        // initialize the game object with an image
+        
         let texture = SKTexture(imageNamed: imageString)
         let color = UIColor.clear
         super.init(texture: texture, color: color, size: texture.size())
@@ -39,7 +39,7 @@ class GameObject : SKSpriteNode, GameProtocol
         fatalError("init(coder:) has not been implemented")
     }
     
-    
+    // Lifecycle Functions
     func CheckBounds()
     {
         

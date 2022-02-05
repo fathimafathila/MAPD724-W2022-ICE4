@@ -1,13 +1,13 @@
 import GameplayKit
 import SpriteKit
 
-class Ocean : GameObject
+class Island : GameObject
 {
     
   
     init()
     {
-        super.init(imageString: "ocean", initialScale: 2.0)
+        super.init(imageString: "island", initialScale: 2.0)
         Start()
     }
     
@@ -18,7 +18,7 @@ class Ocean : GameObject
  
     override func CheckBounds()
     {
-        if(position.y <= -773)
+        if(position.y <= -730)
         {
             Reset()
         }
@@ -26,7 +26,9 @@ class Ocean : GameObject
     
     override func Reset()
     {
-        position.y = 773
+        position.y = 730
+        //get pseudo randomnnumber -313 to 313
+        let randomX:Int = (randomSource?.n)
     }
     
    

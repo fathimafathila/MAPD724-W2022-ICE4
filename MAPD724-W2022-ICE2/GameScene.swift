@@ -9,7 +9,7 @@ var screenHeight: CGFloat?
 
 class GameScene: SKScene
 {
-    // instance variables
+ 
     var ocean: Ocean?
     var plane: Plane?
     
@@ -21,12 +21,12 @@ class GameScene: SKScene
         
         name = "GAME"
         
-        // add ocean to the scene
-        ocean = Ocean() // allocate memory
-        ocean?.position = CGPoint(x: 0, y: 773)
-        addChild(ocean!) // add the ocean to the scene
         
-        // add plane to the scene
+        ocean = Ocean()
+        ocean?.position = CGPoint(x: 0, y: 773)
+        addChild(ocean!)
+        
+      
         plane = Plane()
         plane?.position = CGPoint(x: 0, y: -495)
         addChild(plane!)

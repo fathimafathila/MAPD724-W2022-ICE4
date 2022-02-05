@@ -3,7 +3,7 @@ import SpriteKit
 
 class Plane : GameObject
 {
-    // initializer
+    
     init()
     {
         super.init(imageString: "plane", initialScale: 2.0)
@@ -14,17 +14,17 @@ class Plane : GameObject
         fatalError("init(coder:) has not been implemented")
     }
     
-    // LifeCycle Functions
+   
     
     override func CheckBounds()
     {
-        // constrain on the left boundary
+        
         if(position.x <= -310)
         {
             position.x = -310
         }
         
-        // constrain on the right boundary
+       
         if(position.x >= 310)
         {
             position.x = 310
