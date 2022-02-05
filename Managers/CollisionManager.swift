@@ -35,13 +35,13 @@ class CollisonManager
                                     print("s")
                                     //ScoreManager.Score += 100
                                     //gameViewController?.updateScoreLabel()
-                                    //scene.run(SKAction.playSoundFileNamed("yay", waitForCompletion: false))
+                                    scene.run(SKAction.playSoundFileNamed("yay", waitForCompletion: false))
                                     break
                                 case "cloud":
                                     print("N")
                                    // ScoreManager.Lives -= 1
                                     //gameViewController?.updateLivesLabel()
-                                   // scene.run(SKAction.playSoundFileNamed("thunder", waitForCompletion: false))
+                                    scene.run(SKAction.playSoundFileNamed("thunder", waitForCompletion: false))
                                     //break
                                 default:
                                     break
