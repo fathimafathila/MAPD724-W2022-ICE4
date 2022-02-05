@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B052504527AE13BB00E4A795 /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = B052504427AE13BB00E4A795 /* Island.swift */; };
+		B052504727AE23AD00E4A795 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = B052504627AE23AD00E4A795 /* Cloud.swift */; };
 		E9222973278FAAC600353E41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9222972278FAAC600353E41 /* AppDelegate.swift */; };
 		E9222975278FAAC600353E41 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E9222974278FAAC600353E41 /* GameScene.sks */; };
 		E9222977278FAAC600353E41 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = E9222976278FAAC600353E41 /* Actions.sks */; };
@@ -79,7 +80,8 @@
 
 /* Begin PBXFileReference section */
 		B052504427AE13BB00E4A795 /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
-		E922296F278FAAC600353E41 /* MAPD724-W2022-ICE2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAPD724-W2022-ICE2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B052504627AE23AD00E4A795 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
+		E922296F278FAAC600353E41 /* MAPD724-W2022-ICE3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAPD724-W2022-ICE3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9222972278FAAC600353E41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9222974278FAAC600353E41 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		E9222976278FAAC600353E41 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -165,7 +167,7 @@
 			children = (
 				E9222A012798EBE600353E41 /* GameObjects */,
 				E92229FC2798E1CB00353E41 /* Core */,
-				E9222971278FAAC600353E41 /* MAPD724-W2022-ICE2 */,
+				E9222971278FAAC600353E41 /* MAPD724-W2022-ICE3 */,
 				E9222970278FAAC600353E41 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -173,12 +175,12 @@
 		E9222970278FAAC600353E41 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E922296F278FAAC600353E41 /* MAPD724-W2022-ICE2.app */,
+				E922296F278FAAC600353E41 /* MAPD724-W2022-ICE3.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E9222971278FAAC600353E41 /* MAPD724-W2022-ICE2 */ = {
+		E9222971278FAAC600353E41 /* MAPD724-W2022-ICE3 */ = {
 			isa = PBXGroup;
 			children = (
 				E9222972278FAAC600353E41 /* AppDelegate.swift */,
@@ -191,7 +193,7 @@
 				E9222981278FAAC800353E41 /* LaunchScreen.storyboard */,
 				E92229892798DE6D00353E41 /* Assets */,
 			);
-			path = "MAPD724-W2022-ICE2";
+			path = "MAPD724-W2022-ICE3";
 			sourceTree = "<group>";
 		};
 		E92229892798DE6D00353E41 /* Assets */ = {
@@ -303,6 +305,7 @@
 				E9222A022798EBFA00353E41 /* Ocean.swift */,
 				E9222A042798F25600353E41 /* Plane.swift */,
 				B052504427AE13BB00E4A795 /* Island.swift */,
+				B052504627AE23AD00E4A795 /* Cloud.swift */,
 			);
 			path = GameObjects;
 			sourceTree = "<group>";
@@ -310,9 +313,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E922296E278FAAC600353E41 /* MAPD724-W2022-ICE2 */ = {
+		E922296E278FAAC600353E41 /* MAPD724-W2022-ICE3 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E9222986278FAAC800353E41 /* Build configuration list for PBXNativeTarget "MAPD724-W2022-ICE2" */;
+			buildConfigurationList = E9222986278FAAC800353E41 /* Build configuration list for PBXNativeTarget "MAPD724-W2022-ICE3" */;
 			buildPhases = (
 				E922296B278FAAC600353E41 /* Sources */,
 				E922296C278FAAC600353E41 /* Frameworks */,
@@ -322,9 +325,9 @@
 			);
 			dependencies = (
 			);
-			name = "MAPD724-W2022-ICE2";
+			name = "MAPD724-W2022-ICE3";
 			productName = "MAPD724-W2022-ICE1";
-			productReference = E922296F278FAAC600353E41 /* MAPD724-W2022-ICE2.app */;
+			productReference = E922296F278FAAC600353E41 /* MAPD724-W2022-ICE3.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -342,7 +345,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E922296A278FAAC600353E41 /* Build configuration list for PBXProject "MAPD724-W2022-ICE2" */;
+			buildConfigurationList = E922296A278FAAC600353E41 /* Build configuration list for PBXProject "MAPD724-W2022-ICE3" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -355,7 +358,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E922296E278FAAC600353E41 /* MAPD724-W2022-ICE2 */,
+				E922296E278FAAC600353E41 /* MAPD724-W2022-ICE3 */,
 			);
 		};
 /* End PBXProject section */
@@ -436,6 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E92229FE2798E1FC00353E41 /* GameObject.swift in Sources */,
+				B052504727AE23AD00E4A795 /* Cloud.swift in Sources */,
 				E9222A002798E72F00353E41 /* GameProtocol.swift in Sources */,
 				B052504527AE13BB00E4A795 /* Island.swift in Sources */,
 				E9222979278FAAC600353E41 /* GameScene.swift in Sources */,
@@ -604,8 +608,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ca.centennialcollege.MAPD724-W2022-ICE2";
-				PRODUCT_NAME = "MAPD724-W2022-ICE2";
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.centennialcollege.MAPD724-W2022-ICE3";
+				PRODUCT_NAME = "MAPD724-W2022-ICE3";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -632,8 +636,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ca.centennialcollege.MAPD724-W2022-ICE2";
-				PRODUCT_NAME = "MAPD724-W2022-ICE2";
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.centennialcollege.MAPD724-W2022-ICE3";
+				PRODUCT_NAME = "MAPD724-W2022-ICE3";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -643,7 +647,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E922296A278FAAC600353E41 /* Build configuration list for PBXProject "MAPD724-W2022-ICE2" */ = {
+		E922296A278FAAC600353E41 /* Build configuration list for PBXProject "MAPD724-W2022-ICE3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E9222984278FAAC800353E41 /* Debug */,
@@ -652,7 +656,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E9222986278FAAC800353E41 /* Build configuration list for PBXNativeTarget "MAPD724-W2022-ICE2" */ = {
+		E9222986278FAAC800353E41 /* Build configuration list for PBXNativeTarget "MAPD724-W2022-ICE3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E9222987278FAAC800353E41 /* Debug */,
