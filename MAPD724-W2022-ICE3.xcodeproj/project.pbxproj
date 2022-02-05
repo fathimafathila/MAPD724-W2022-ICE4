@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B052504527AE13BB00E4A795 /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = B052504427AE13BB00E4A795 /* Island.swift */; };
 		B052504727AE23AD00E4A795 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = B052504627AE23AD00E4A795 /* Cloud.swift */; };
+		B052504A27AE358200E4A795 /* CollisionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B052504927AE358200E4A795 /* CollisionManager.swift */; };
 		E9222973278FAAC600353E41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9222972278FAAC600353E41 /* AppDelegate.swift */; };
 		E9222975278FAAC600353E41 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E9222974278FAAC600353E41 /* GameScene.sks */; };
 		E9222977278FAAC600353E41 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = E9222976278FAAC600353E41 /* Actions.sks */; };
@@ -81,6 +82,7 @@
 /* Begin PBXFileReference section */
 		B052504427AE13BB00E4A795 /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
 		B052504627AE23AD00E4A795 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
+		B052504927AE358200E4A795 /* CollisionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollisionManager.swift; sourceTree = "<group>"; };
 		E922296F278FAAC600353E41 /* MAPD724-W2022-ICE3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAPD724-W2022-ICE3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9222972278FAAC600353E41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9222974278FAAC600353E41 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -162,9 +164,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B052504827AE354400E4A795 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B052504927AE358200E4A795 /* CollisionManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		E9222966278FAAC600353E41 = {
 			isa = PBXGroup;
 			children = (
+				B052504827AE354400E4A795 /* Managers */,
 				E9222A012798EBE600353E41 /* GameObjects */,
 				E92229FC2798E1CB00353E41 /* Core */,
 				E9222971278FAAC600353E41 /* MAPD724-W2022-ICE3 */,
@@ -440,6 +451,7 @@
 			files = (
 				E92229FE2798E1FC00353E41 /* GameObject.swift in Sources */,
 				B052504727AE23AD00E4A795 /* Cloud.swift in Sources */,
+				B052504A27AE358200E4A795 /* CollisionManager.swift in Sources */,
 				E9222A002798E72F00353E41 /* GameProtocol.swift in Sources */,
 				B052504527AE13BB00E4A795 /* Island.swift in Sources */,
 				E9222979278FAAC600353E41 /* GameScene.swift in Sources */,
