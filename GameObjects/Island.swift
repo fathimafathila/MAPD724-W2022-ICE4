@@ -28,13 +28,16 @@ class Island : GameObject
     {
         position.y = 730
         //get pseudo randomnnumber -313 to 313
-        let randomX:Int = (randomSource?.n)
+        let randomX:Int = (randomSource?.nextInt(upperBound: 616))! - 313
+                position.x = CGFloat(randomX)
+                isCollding = false
     }
     
    
     override func Start()
     {
-        zPosition = 0
+        Reset()
+        zPosition = 1
         verticalSpeed = 5.0
     }
     

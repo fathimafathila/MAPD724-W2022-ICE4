@@ -12,6 +12,7 @@ class GameScene: SKScene
  
     var ocean: Ocean?
     var plane: Plane?
+    var island: Island?
     
       
     override func didMove(to view: SKView)
@@ -25,6 +26,9 @@ class GameScene: SKScene
         ocean = Ocean()
         ocean?.position = CGPoint(x: 0, y: 773)
         addChild(ocean!)
+        
+        island = Island()
+        addChild(island!)
         
       
         plane = Plane()
@@ -72,5 +76,6 @@ class GameScene: SKScene
     {
         ocean?.Update()
         plane?.Update()
+        island?.Update()
     }
 }
