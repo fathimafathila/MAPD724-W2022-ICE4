@@ -9,6 +9,7 @@ import GameplayKit
 
 class CollisonManager
 {
+    public static var gameViewController: GameViewController?
     public static func SquaredDistance(point1: CGPoint,point2: CGPoint) -> CGFloat
     {
         let Xs: CGFloat = point2.x - point1.x
@@ -32,17 +33,17 @@ class CollisonManager
                                 switch(object2.name)
                                 {
                                 case "island":
-                                    print("s")
-                                    //ScoreManager.Score += 100
-                                    //gameViewController?.updateScoreLabel()
+                                    //print("s")
+                                    ScoreManager.Score += 100
+                                    gameViewController?.updateScoreLabel()
                                     scene.run(SKAction.playSoundFileNamed("yay", waitForCompletion: false))
                                     break
                                 case "cloud":
                                     print("N")
-                                   // ScoreManager.Lives -= 1
-                                    //gameViewController?.updateLivesLabel()
+                                    ScoreManager.Lives -= 1
+                                    gameViewController?.updateLivesLabel()
                                     scene.run(SKAction.playSoundFileNamed("thunder", waitForCompletion: false))
-                                    //break
+                                    break
                                 default:
                                     break
                                 }
