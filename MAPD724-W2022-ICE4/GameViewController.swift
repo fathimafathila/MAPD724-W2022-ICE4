@@ -65,4 +65,6 @@ class GameViewController: UIViewController {
     func updateLivesLabel() -> Void{
         Lives.text = "Lives: \(ScoreManager.Lives)"
     }
+    
+    func PresentStartScene
 }
