@@ -9,6 +9,7 @@ var screenHeight: CGFloat?
 
 class GameScene: SKScene
 {
+    var gameManager: GameManager?
  
     var ocean: Ocean?
     var plane: Plane?
