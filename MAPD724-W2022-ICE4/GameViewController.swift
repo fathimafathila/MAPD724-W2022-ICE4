@@ -12,9 +12,16 @@ import GameplayKit
 class GameViewController: UIViewController, GameManager {
    
 
+    @IBOutlet weak var StartButton: UIButton!
+    
+    @IBOutlet weak var EndButton: UIButton!
+    
+    //Label Outlets
     @IBOutlet weak var Lives: UILabel!
     @IBOutlet weak var ScoreLabel: UILabel!
     
+    @IBOutlet weak var GameOverLabel: UILabel!
+    @IBOutlet weak var StartLabel: UILabel!
     var currentScene: SKScene!
     override func viewDidLoad()
     {
@@ -23,13 +30,15 @@ class GameViewController: UIViewController, GameManager {
        
         ScoreLabel.isHidden = true
         Lives.isHidden = true
+        GameOverLabel.isHidden = true
+        EndButton.isHidden = true
         // Initialozinf Lives and score
         CollisonManager.gameViewController = self
         //ScoreManager.Score = 0
         //ScoreManager.Lives = 5
         //updateLivesLabel()
         //updateScoreLabel()
-        SetScene(sceneName: "GameScene")
+        SetScene(sceneName: "StartScene")
     }
 
     override var shouldAutorotate: Bool {
@@ -75,16 +84,46 @@ class GameViewController: UIViewController, GameManager {
         }
     }
     func PresentStartScene() {
+        StartButton.isHidden =  false
+        StartLabel.isHidden = false
         ScoreLabel.isHidden = true
         Lives.isHidden = true
         
     }
     
     func PresentEndScene() {
+        GameOverLabel.isHidden = false
+        EndButton.isHidden = false
         ScoreLabel.isHidden = true
         Lives.isHidden = true
         SetScene(sceneName: "EndScene")
        
+    }
+    
+   
+    @IBAction func StartButton_pressed(_ sender: UIButton) {
+        StartButton.isHidden = true
+        ScoreLabel.isHidden = false
+        StartLabel.isHidden = true
+        Lives.isHidden = false
+        ScoreManager.Score = 0
+        ScoreManager.Lives = 5
+        updateLivesLabel()
+        updateScoreLabel()
+        SetScene(sceneName: "GameScene")
+    }
+    
+    @IBAction func EndButton(_ sender: UIButton) {
+        EndButton.isHidden = true
+        GameOverLabel.isHidden = true
+        ScoreLabel.isHidden = false
+        StartLabel.isHidden = true
+        Lives.isHidden = false
+        ScoreManager.Score = 0
+        ScoreManager.Lives = 5
+        updateLivesLabel()
+        updateScoreLabel()
+        SetScene(sceneName: "GameScene")
     }
     
 }

@@ -7,18 +7,22 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Dock51.ttf">
+            <string>Dock51</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="MAPD724_W2022_ICE3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="MAPD724_W2022_ICE4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lives: 00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fq6-RB-Tik">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Lives: 00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fq6-RB-Tik">
                                 <rect key="frame" x="31" y="71" width="147" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -30,13 +34,73 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USG-0T-r0x">
+                                <rect key="frame" x="31" y="120" width="0.0" height="0.0"/>
+                                <attributedString key="attributedText"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAIL PILOT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rxm-Oe-slP">
+                                <rect key="frame" x="31" y="128" width="363" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="Q2z-jx-1bv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Dock51" family="Dock 51" pointSize="60"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Biz-yR-O3T">
+                                <rect key="frame" x="100.5" y="376" width="224" height="74"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="startButton.png"/>
+                                <connections>
+                                    <action selector="StartButton_pressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="eO5-HD-Svb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Game over" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAB-UE-XuC">
+                                <rect key="frame" x="26" y="243" width="363" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="aDf-2z-ncx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Dock51" family="Dock 51" pointSize="60"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtR-Qf-wmN">
+                                <rect key="frame" x="100" y="500" width="238" height="74"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="restartButton.png"/>
+                                <connections>
+                                    <action selector="EndButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="jU4-XO-rzo"/>
+                                    <action selector="StartButton_pressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="zsH-MM-k7M"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <constraints>
+                            <constraint firstItem="BAB-UE-XuC" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="26" id="0r5-UJ-nVu"/>
+                            <constraint firstItem="BAB-UE-XuC" firstAttribute="top" secondItem="Rxm-Oe-slP" secondAttribute="bottom" constant="28" id="4qI-F1-lIX"/>
+                            <constraint firstItem="Rxm-Oe-slP" firstAttribute="leading" secondItem="Fq6-RB-Tik" secondAttribute="leading" id="6LM-gP-Ecc"/>
+                            <constraint firstItem="Rxm-Oe-slP" firstAttribute="leading" secondItem="USG-0T-r0x" secondAttribute="leading" id="Bs1-lY-G9S"/>
+                            <constraint firstItem="BAB-UE-XuC" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="FoM-c0-Wj4"/>
+                            <constraint firstItem="rtR-Qf-wmN" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="100" id="GWz-cG-f8o"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="rtR-Qf-wmN" secondAttribute="trailing" constant="76" id="MCN-fg-Q4B"/>
+                            <constraint firstItem="Biz-yR-O3T" firstAttribute="top" secondItem="BAB-UE-XuC" secondAttribute="bottom" constant="46" id="PTr-Cy-hU0"/>
+                            <constraint firstItem="rtR-Qf-wmN" firstAttribute="top" secondItem="Biz-yR-O3T" secondAttribute="bottom" constant="50" id="bMF-DP-Dsd"/>
+                            <constraint firstItem="Rxm-Oe-slP" firstAttribute="top" secondItem="Fq6-RB-Tik" secondAttribute="bottom" constant="33" id="hDO-LE-Avu"/>
+                            <constraint firstItem="Rxm-Oe-slP" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="31" id="xOR-Yf-FHX"/>
+                            <constraint firstItem="Rxm-Oe-slP" firstAttribute="trailing" secondItem="3se-qz-xqx" secondAttribute="trailingMargin" id="ycH-KU-pME"/>
+                            <constraint firstItem="Biz-yR-O3T" firstAttribute="centerX" secondItem="Rxm-Oe-slP" secondAttribute="centerX" id="yuZ-Pq-7YB"/>
+                            <constraint firstItem="BAB-UE-XuC" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="top" constant="243" id="zc7-vr-Z7c"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="EndButton" destination="rtR-Qf-wmN" id="eZm-1x-F03"/>
+                        <outlet property="GameOverLabel" destination="BAB-UE-XuC" id="SoJ-Y5-po2"/>
                         <outlet property="Lives" destination="Fq6-RB-Tik" id="a2l-XE-zkd"/>
                         <outlet property="ScoreLabel" destination="S4t-eM-91B" id="RZv-Iq-5av"/>
+                        <outlet property="StartButton" destination="Biz-yR-O3T" id="yZZ-S4-yYv"/>
+                        <outlet property="StartLabel" destination="Rxm-Oe-slP" id="6yr-aU-Nif"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
@@ -45,8 +109,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="restartButton.png" width="200" height="60"/>
+        <image name="startButton.png" width="200" height="60"/>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
